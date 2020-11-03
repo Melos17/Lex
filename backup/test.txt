@@ -1,0 +1,29 @@
+#include "pch.h"
+
+char WordReader::getNextChar() {
+	if (mIndex >= mSource.size()) return '\0';
+	else return mSource[mIndex++];
+}
+
+Word WordReader::getNextWord() {
+	Word word;
+	int status = 0;
+	size_t startPos = mIndex;
+	while (mIndex < mSource.size()) {
+		char c = mSource[mIndex++];
+		size_t symbol = mDFA.symbolIndex[c];
+		status = mDFA.dfa[symbol][status];
+		if (status < 0) {
+			--mIndex;
+			break;
+		}
+		else if (mDFA.acceptStatus.find(status) != mDFA.acceptStatus.end()) {
+			word.type = mDFA.acceptStatus.find(status)->second;
+			word.content = mSource.substr(startPos, mIndex - startPos);
+		}
+	}
+	if (word.type == -1 && mIndex == mSource.size()) {
+		word.isEnd = true;
+	}
+	return word;
+}

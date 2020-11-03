@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Main">
+      <UniqueIdentifier>{c7ca2744-56ab-4b9a-ab68-bd778c6972bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LexParse">
+      <UniqueIdentifier>{5a0d41f7-4827-4e47-8654-3606cd9c982e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RegexParse">
+      <UniqueIdentifier>{8ce1c747-b3a7-48f0-a8f6-feb445811fb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LexParse\Auto">
+      <UniqueIdentifier>{6341db08-d1d3-404f-87e1-34443c1da60e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LexParse\Manual">
+      <UniqueIdentifier>{78570f99-ec7b-4d55-98bd-075b20652fe0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RegexParse\Auto">
+      <UniqueIdentifier>{75c0a7b3-7d78-4f14-b0b2-cbaf4b62a301}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RegexParse\Manual">
+      <UniqueIdentifier>{554e669c-e104-4376-be2b-31e2f1e94e87}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dfa.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="dfa_factory.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="symbols.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="tree.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="LexParse\Manual\lex.cpp">
+      <Filter>LexParse\Manual</Filter>
+    </ClCompile>
+    <ClCompile Include="RegexParse\Manual\scan.cpp">
+      <Filter>RegexParse\Manual</Filter>
+    </ClCompile>
+    <ClCompile Include="produce.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="LexParse\Manual\lex_word.cpp">
+      <Filter>LexParse\Manual</Filter>
+    </ClCompile>
+    <ClCompile Include="report.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="RegexParse\multi_regex_parse.cpp">
+      <Filter>RegexParse</Filter>
+    </ClCompile>
+    <ClCompile Include="RegexParse\Manual\manual_parse.cpp">
+      <Filter>RegexParse\Manual</Filter>
+    </ClCompile>
+    <ClCompile Include="RegexParse\Auto\auto_parse.cpp">
+      <Filter>RegexParse\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="LexParse\Auto\lex_auto_wordDfa.cpp">
+      <Filter>LexParse\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="LexParse\Auto\auto_lex_parse.cpp">
+      <Filter>LexParse\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="LexParse\Auto\lex_auto_word.cpp">
+      <Filter>LexParse\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="LexParse\Auto\auto_lex.cpp">
+      <Filter>LexParse\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="RegexParse\Auto\auto_wordDFA.cpp">
+      <Filter>RegexParse\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="RegexParse\Auto\auto_word.cpp">
+      <Filter>RegexParse\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="LexParse\Auto\auto_lex_parseInit.cpp">
+      <Filter>LexParse\Auto</Filter>
+    </ClCompile>
+    <ClCompile Include="RegexParse\Auto\auto_parseInit.cpp">
+      <Filter>RegexParse\Auto</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dfa.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="dfa_factory.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="symbols.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="tree.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="LexParse\Manual\lex.h">
+      <Filter>LexParse\Manual</Filter>
+    </ClInclude>
+    <ClInclude Include="LexParse\Manual\lex_dfa_factory.h">
+      <Filter>LexParse\Manual</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexParse\Manual\scan.h">
+      <Filter>RegexParse\Manual</Filter>
+    </ClInclude>
+    <ClInclude Include="produce.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="word_ori.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="LexParse\Manual\lex_word.h">
+      <Filter>LexParse\Manual</Filter>
+    </ClInclude>
+    <ClInclude Include="report.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="feature.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexParse\multi_regex_parse.h">
+      <Filter>RegexParse</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexParse\Manual\manual_parse.h">
+      <Filter>RegexParse\Manual</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexParse\Auto\auto_parse.h">
+      <Filter>RegexParse\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexParse\Auto\expression.h">
+      <Filter>RegexParse\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="LexParse\Auto\auto_lex_parse.h">
+      <Filter>LexParse\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="LexParse\Auto\lex_auto_word.h">
+      <Filter>LexParse\Auto</Filter>
+    </ClInclude>
+    <ClInclude Include="RegexParse\Auto\auto_word.h">
+      <Filter>RegexParse\Auto</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LexParse\Auto\lex.lex">
+      <Filter>LexParse\Auto</Filter>
+    </None>
+    <None Include="LexParse\Auto\lex.yacc">
+      <Filter>LexParse\Auto</Filter>
+    </None>
+    <None Include="RegexParse\Auto\regex_new.lex">
+      <Filter>RegexParse\Auto</Filter>
+    </None>
+    <None Include="RegexParse\Auto\regex_new.yacc">
+      <Filter>RegexParse\Auto</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,141 @@
+
+
+void test(string regex, std::vector<string> strs) {
+	std::cout << "regex:" << regex << std::endl;
+	RegexParse parse;
+	AbstractTreeNode* node = parse.parse(regex, 5);
+	node->show();
+
+	DfaFactory dfa;
+	DFA lex = dfa.produce(regex, 55);
+
+	for (auto str : strs) {
+		int acceptId = -1;
+		string match_str;
+		bool match = lex.check(str, acceptId, match_str);
+		std::cout << str << ":" << acceptId  << std::endl;
+	}
+}
+
+void test(std::vector<std::pair<string, int>> regex, std::vector<string> strs) {
+	DfaFactory dfa;
+	DFA lex = dfa.produce(regex);
+
+	std::cout << "acceptStatus" << std::endl;
+	for (auto pair : lex.acceptStatus) {
+		std::cout << pair.first << ":" << pair.second << std::endl;
+	}
+
+	for (auto str : strs) {
+		int acceptId = -1;
+		string match_str;
+		bool match = lex.check(str, acceptId, match_str);
+		std::cout << str << ":" << acceptId << "::" << match_str << std::endl;
+	}
+}
+
+
+	// test(
+	// 	{
+	// 		//{"\"([^\\\"]|(\\\"))*\"", 3},
+	// 		{"L?\"[^\"]*\"", 3},
+	// 	},
+	// 
+	// 	{ "\"pch.h\"" }
+	// );
+	// return 0;
+
+
+
+	/*
+	{
+		std::cout << "case1:" << std::endl;
+		std::string s = "a+b.cd";
+		test(s, {
+		"aaa",
+		"abccd",
+		"aaaabccd",
+		"abbbbcd",
+		"bbcd" });
+
+		std::cout << std::endl << std::endl;
+		std::cout << std::endl << std::endl;
+	}
+	{
+		std::cout << "case2:" << std::endl;
+		std::string s = "(a|b)*abb";
+		RegexParse parse;
+		AbstractTreeNode* node = parse.parse(s);
+		node->show();
+
+		DfaFactory dfa;
+		dfa.produce(s);
+		std::cout << std::endl << std::endl;
+		std::cout << std::endl << std::endl;
+	}
+
+	{
+		std::cout << "case3:" << std::endl;
+		std::string s = "0(1*2)|3|44+5";
+		RegexParse parse;
+		AbstractTreeNode* node = parse.parse(s);
+		node->show();
+
+		DfaFactory dfa;
+		dfa.produce(s);
+		std::cout << std::endl << std::endl;
+		std::cout << std::endl << std::endl;
+	} */
+	
+	
+	
+
+
+			std::cout << "    ~~" << symbolsId << "   ~";
+			for (auto status : newStatus) {
+				std::cout << status << " ";
+			}
+			std::cout << std::endl;
+			
+			
+			
+			
+	
+	/*
+	{
+		std::cout << "case1:" << std::endl;
+		test(
+			{
+				//{"\"([^\\\"]|(\\\"))*\"", 3},
+				{"\".*\"", 3},
+				{"a", 5},
+			},
+			
+			{ "\"231'3\"\"", }
+			);
+
+		std::cout << std::endl << std::endl;
+		std::cout << std::endl << std::endl;
+	}
+	*/
+	
+	
+	
+	
+
+		/*
+	std::vector<string> strs = {
+		"_afjei32",
+		"\"2'313\\\"\"",
+		"\"'[^\']+'\"",
+	};
+
+	for (auto str : strs) {
+		int acceptId = -1;
+		string match_str;
+		bool match = dfa.check(str, acceptId, match_str);
+		std::cout << str << ":" << acceptId << "::" << match_str << std::endl;
+	}
+	*/
+	
+	

@@ -1,0 +1,9 @@
+﻿  auto_lex.cpp
+  auto_lex_parse.cpp
+  auto_lex_parseInit.cpp
+  auto_parse.cpp
+  auto_parseInit.cpp
+  multi_regex_parse.cpp
+  main.cpp
+  正在生成代码...
+  Lex.vcxproj -> F:\Programme\Lex\Debug\Lex.exe
